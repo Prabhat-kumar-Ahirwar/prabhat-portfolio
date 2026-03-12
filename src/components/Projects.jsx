@@ -29,7 +29,11 @@ const projectsData = [
     img: portfolioPreview,
     description: "Personal portfolio showcasing skills, projects, and achievements built with React and Tailwind.",
     link: "https://github.com/Prabhat-kumar-Ahirwar/MyPortfolio.git",
+<<<<<<< HEAD
     demo: "https://myportfolioprabhat.vercel.app/",
+=======
+    demo: "https://prabhat.dev",
+>>>>>>> 3e612d4750973ef8eec23790e5dd4b13a261889e
     tech: ["React", "Tailwind CSS", "Framer Motion"]
   },
   {
