@@ -43,39 +43,48 @@ function App() {
         </aside>
 
         {/* RIGHT CONTENT */}
-        <main className="glass rounded-[2rem] p-6 sm:p-8 lg:p-10 relative min-h-[80vh] flex flex-col">
-          <TopNav />
+        <div className="relative flex flex-col min-h-[80vh]">
+          <main className="glass rounded-[2rem] p-6 sm:p-8 lg:p-10 flex-1 flex flex-col pb-24 md:pb-10 transition-all duration-300">
+            <div className="hidden md:block">
+              <TopNav />
+            </div>
 
-          {/* PAGE ANIMATION */}
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={location.pathname}
-              initial={{ opacity: 0, y: 8 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -8 }}
-              transition={{ duration: 0.25, ease: "easeInOut" }}
-            >
-              <Routes location={location}>
-                {/* Default */}
-                <Route path="/" element={<Navigate to="/about" replace />} />
+            {/* PAGE ANIMATION */}
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={location.pathname}
+                initial={{ opacity: 0, y: 8 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -8 }}
+                transition={{ duration: 0.25, ease: "easeInOut" }}
+              >
+                <Routes location={location}>
+                  {/* Default */}
+                  <Route path="/" element={<Navigate to="/about" replace />} />
 
-                {/* Pages */}
-                <Route path="/about" element={<About />} />
-                <Route path="/resume" element={<Resume />} />
-                <Route path="/projects" element={<Projects />} />
-                <Route path="/skills" element={<Skills />} />
-                <Route path="/contact" element={<Contact />} />
-              </Routes>
-            </motion.div>
-          </AnimatePresence>
+                  {/* Pages */}
+                  <Route path="/about" element={<About />} />
+                  <Route path="/resume" element={<Resume />} />
+                  <Route path="/projects" element={<Projects />} />
+                  <Route path="/skills" element={<Skills />} />
+                  <Route path="/contact" element={<Contact />} />
+                </Routes>
+              </motion.div>
+            </AnimatePresence>
 
-          {/* Footer */}
-          <footer className="mt-auto pt-10 text-center text-gray-500 text-sm border-t border-white/5">
-            <p className="flex items-center justify-center gap-1">
-              © 2026 Prabhat
-            </p>
-          </footer>
-        </main>
+            {/* Footer */}
+            <footer className="mt-auto pt-10 text-center text-gray-500 text-sm border-t border-white/5">
+              <p className="flex items-center justify-center gap-1">
+                © 2026 Prabhat
+              </p>
+            </footer>
+          </main>
+          
+          {/* Mobile Navigation (Outside main glass to avoid backdrop-blur container constraint) */}
+          <div className="md:hidden">
+            <TopNav />
+          </div>
+        </div>
 
       </div>
     </div>
