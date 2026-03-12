@@ -23,7 +23,7 @@ const About = () => {
     {
       title: "Portfolio Website",
       img: "/src/assets/portfolio-preview.png",
-      url: "prabhat.dev",
+      url: "https://myportfolioprabhat.vercel.app/",
       description:
         "Personal portfolio showcasing experience, skills, and achievements.",
       tech: ["React", "Tailwind", "Framer Motion"]
@@ -31,7 +31,7 @@ const About = () => {
     {
       title: "Study Hub",
       img: "/src/assets/studyhub.png",
-      url: "terminal.prabhat.dev",
+      url: "https://myportfolioprabhat.vercel.app/",
       description:
         "A collaborative Study Hub platform designed for students to share, access, and organize study materials interactively.",
       tech: ["Java", "Spring Boot", "React", "MySQL"]
@@ -65,7 +65,7 @@ const About = () => {
             Hello, World! 👋
           </span>
         </motion.div>
-        
+
         <motion.h2 variants={itemVariants} className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-tight tracking-tight">
           I'm <span className="text-gradient">Prabhat Kumar</span>,<br />
           Building Scalable Backends.
@@ -82,7 +82,7 @@ const About = () => {
             My expertise lies in core backend technologies including{" "}
             <span className="text-gray-200 font-semibold border-b border-accent-secondary/50 pb-0.5">Java, Spring Boot, REST APIs, and SQL</span>, with a strong emphasis on clean code, secure authentication (JWT), and efficient database modeling.
           </p>
-          
+
           <p>
             Driven by a constant desire to learn and solve complex engineering problems in collaborative, professional environments.
           </p>
