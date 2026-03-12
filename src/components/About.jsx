@@ -23,7 +23,7 @@ const About = () => {
     {
       title: "Portfolio Website",
       img: "/src/assets/portfolio-preview.png",
-      url: "https://myportfolioprabhat.vercel.app/",
+      url: "my-portfolio",
       description:
         "Personal portfolio showcasing experience, skills, and achievements.",
       tech: ["React", "Tailwind", "Framer Motion"]
@@ -31,7 +31,7 @@ const About = () => {
     {
       title: "Study Hub",
       img: "/src/assets/studyhub.png",
-      url: "https://myportfolioprabhat.vercel.app/",
+      url: "my-studyhub",
       description:
         "A collaborative Study Hub platform designed for students to share, access, and organize study materials interactively.",
       tech: ["Java", "Spring Boot", "React", "MySQL"]
