@@ -68,7 +68,7 @@ const About = () => {
         </motion.div>
 
         <motion.h2 variants={itemVariants} className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-tight tracking-tight">
-          I'm <span className="text-gradient">Prabhat Kumar</span>,<br />
+          I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 drop-shadow-lg">Prabhat Kumar</span>,<br />
           Building Scalable Backends.
         </motion.h2>
 
