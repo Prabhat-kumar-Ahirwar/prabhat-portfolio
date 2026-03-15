@@ -1,5 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion"; // eslint-disable-line no-unused-vars
+import portfolioPreview from "../assets/portfolio-preview.png";
+import studyHub from "../assets/studyhub.png";
 
 const About = () => {
   const techStack = [
@@ -19,19 +21,18 @@ const About = () => {
     { value: "100%", label: "Dedication" },
   ];
 
+
   const featuredProjects = [
     {
       title: "Portfolio Website",
-      img: "/src/assets/portfolio-preview.png",
-      url: "https://myportfolioprabhat.vercel.app/",
+      img: portfolioPreview,
       description:
         "Personal portfolio showcasing experience, skills, and achievements.",
       tech: ["React", "Tailwind", "Framer Motion"]
     },
     {
       title: "Study Hub",
-      img: "/src/assets/studyhub.png",
-      url: "https://terminal.prabhat.dev",
+      img: studyHub,
       description:
         "A collaborative Study Hub platform designed for students to share, access, and organize study materials interactively.",
       tech: ["Java", "Spring Boot", "React", "MySQL"]
