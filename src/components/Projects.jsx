@@ -20,17 +20,17 @@ const projectsData = [
     title: "Study Hub",
     img: StudyHubImg,
     description: "Collaborative platform for students to share and access notes and study materials interactively.",
-    link: "https://github.com/Prabhat-kumar-Ahirwar",
-    demo: "https://terminal.prabhat.dev",
+    link: "https://github.com/Prabhat-kumar-Ahirwar/Study-Hub",
+    demo: "https://github.com/Prabhat-kumar-Ahirwar/Study-Hub",
     tech: ["Java", "Spring Boot", "React", "REST API"]
   },
   {
     title: "Portfolio Website",
     img: portfolioPreview,
     description: "Personal portfolio showcasing skills, projects, and achievements built with React and Tailwind.",
-    link: "https://github.com/Prabhat-kumar-Ahirwar/MyPortfolio.git",
+    link: "https://github.com/Prabhat-kumar-Ahirwar/prabhat-portfolio",
     demo: "https://myportfolioprabhat.vercel.app/",
-    tech: ["React", "Tailwind CSS", "Framer Motion"]
+    tech: ["React", "Tailwind CSS"]
   },
   {
     title: "Chating Group application",
